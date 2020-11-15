@@ -19,7 +19,7 @@ So I made one. Feel free to use it !
 - It contains a set of necessary tests for the Inbox contract by default.
 - You can run your tests by executing the following command :
 ```shell script
-mocha
+npm run test
 ```
 
 **Compile**
