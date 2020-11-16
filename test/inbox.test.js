@@ -12,6 +12,8 @@ const web3 = new Web3(provider);
 // To make the tests.
 const assert = require('assert');
 
+const { getMessage, setMessage } = require('../interact.js');
+
 describe('Inbox', () => {
   let accounts = undefined;
   let contract = undefined;
@@ -32,14 +34,13 @@ describe('Inbox', () => {
   });
 
   it('has a default message',async () => {
-    const message = await contract.methods.message().call();
+    const message = await getMessage(contract);
     assert.equal(message, initialMsg);
   });
 
-  // Take a look at the web3 documentation to understand the arguments passed to the send function.
   it('can set a new message', async () => {
     const newMessage = 'Goodbye !';
-    await contract.methods.setMessage(newMessage).send({ from: accounts[0] });
+    await setMessage(contract, web3, newMessage);
     const message = await contract.methods.message().call();
     assert.equal(message, newMessage);
   });
