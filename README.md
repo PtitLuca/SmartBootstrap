@@ -4,9 +4,9 @@
 
 I always wanted to have a boilerplate project to start a dapp project.
 
-If you want to write, test, compile and deploy a smart contract in the same place, this repository can help you.
-
 So I made one. Feel free to use it !
+
+If you want to write, test, compile and deploy a smart contract in the same place, this repository can help you.
 
 ## What can this project do ?
 
