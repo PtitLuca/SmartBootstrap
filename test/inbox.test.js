@@ -30,4 +30,9 @@ describe('Inbox', () => {
   it('can deploy a contract', () => {
     assert.ok(contract.options.address);
   });
+
+  it('has a default message',async () => {
+    const message = await contract.methods.message().call();
+    assert.equal(message, initialMsg);
+  });
 });
