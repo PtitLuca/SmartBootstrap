@@ -29,7 +29,9 @@ npm run test
 ```shell script
      node compile.js
 ```
-- It will create two files in the `out` folder : `abi.json` and `bytecode.json`.
+- It will create two files in the `out` folder :
+    
+    `<contract_name>abi.json` and `<contract_name>bytecode.json`.
 
 **Deploy**
 - Deploying a smart contract is not an easy process. You can use Remix to do all the work for you, but actually understanding in depth the deployment will help you interact with the contract later on.
