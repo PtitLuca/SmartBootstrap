@@ -35,4 +35,12 @@ describe('Inbox', () => {
     const message = await contract.methods.message().call();
     assert.equal(message, initialMsg);
   });
+
+  // Take a look at the web3 documentation to understand the arguments passed to the send function.
+  it('can set a new message', async () => {
+    const newMessage = 'Goodbye !';
+    await contract.methods.setMessage(newMessage).send({ from: accounts[0] });
+    const message = await contract.methods.message().call();
+    assert.equal(message, newMessage);
+  });
 });
