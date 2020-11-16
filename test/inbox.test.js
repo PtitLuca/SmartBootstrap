@@ -29,7 +29,7 @@ describe('Inbox', () => {
       .send({ from: accounts[0], gas: 1000000 });
   });
 
-  it('can deploy a contract', () => {
+  it('has been deployed', () => {
     assert.ok(contract.options.address);
   });
 
