@@ -10,14 +10,14 @@ If you want to write, test, compile and deploy a smart contract in the same plac
 
 ## What can this project do ?
 
-**Write**
+**Write** :writing_hand:
 
 Well it is your job, but there is a place for it :wink:
 
 - You can write the smart contract in the `contracts` folder.
 - It contains an Inbox contract by default.
 
-**Test**
+**Test** :test_tube:
 - You can write some tests in the `test` folder.
 - It contains a set of necessary tests for the Inbox contract by default.
 - You can run your tests by executing the following command :
@@ -25,7 +25,7 @@ Well it is your job, but there is a place for it :wink:
 npm run test
 ```
 
-**Compile**
+**Compile** :wrench:
 - The compile script contains a set of instructions to compile a smart contract.
 - You can also get the contract's ABI and bytecode.
 - Run the compiler by executing the following command :
@@ -36,7 +36,7 @@ node compile.js
     
     `<contract_name>abi.json` and `<contract_name>bytecode.json`.
 
-**Deploy**
+**Deploy** :rocket:
 - Deploying a smart contract is not an easy process. You can use Remix to do all the work for you, but actually understanding in depth the deployment will help you interact with the contract later on.
 - You need to set two environment variables into a `.env` file.
     - The first one is the `INFURA_ENDPOINT` and represents the node endpoint which will receive your contract transaction.
