@@ -11,6 +11,9 @@ If you want to write, test, compile and deploy a smart contract in the same plac
 ## What can this project do ?
 
 **Write**
+
+Well it is your job, but there is a place for it :wink:
+
 - You can write the smart contract in the `contracts` folder.
 - It contains an Inbox contract by default.
 
@@ -27,7 +30,7 @@ npm run test
 - You can also get the contract's ABI and bytecode.
 - Run the compiler by executing the following command :
 ```shell script
-     node compile.js
+node compile.js
 ```
 - It will create two files in the `out` folder :
     
@@ -40,5 +43,5 @@ npm run test
     - The second one is the `MMEMONIC`. It will be used during the deployment to pay the transaction. Please make sure this information is private.
 - Then you just have to run the following command to get the contract address. It will be usefull further to interact with the contract, but you can retrieve it using Etherscan (or any blockchain explorer).
 ```shell script
-    node deploy.js
+node deploy.js
 ```
