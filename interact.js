@@ -6,7 +6,7 @@ const getMessage = async (contract) => {
 };
 const setMessage = async (contract, web3, newMessage) => {
   const accounts = await getAccounts(web3);
-  return await contract.methods.setMessage(newMessage).send({ from: accounts[0] });
+  return contract.methods.setMessage(newMessage).send({from: accounts[0]});
 };
 
 module.exports = {
