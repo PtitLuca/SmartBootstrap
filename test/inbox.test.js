@@ -1,7 +1,7 @@
 // Retrieve the interface to interact with the contract.
-const abi = require('../out/abi.json');
+const abi = require('../out/inbox-abi.json');
 // Retrieve the bytecode to deploy the contract.
-const bytecode = require('../out/bytecode.json');
+const bytecode = require('../out/inbox-bytecode.json');
 // Ganache is used to load fake ethereum accounts.
 const ganache = require('ganache-cli');
 const provider = ganache.provider();
